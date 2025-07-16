@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { BottomNavigation } from "@/components/layout/bottom-navigation";
 import "./globals.css";
 
@@ -15,7 +15,6 @@ export const metadata: Metadata = {
   title: "MoneyMate: Currency Converter",
   description: "Track real-time exchange rates with beautiful animations",
   manifest: "/manifest.json",
-  themeColor: "#3b82f6",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -25,7 +24,14 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     apple: "/icons/icon-192x192.png",
   },
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: "#3b82f6",
 };
 
 export default function RootLayout({
