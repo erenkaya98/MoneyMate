@@ -1,0 +1,100 @@
+
+> moneymate@0.1.0 dev
+> next dev --turbopack
+
+   ▲ Next.js 15.4.1 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.104:3000
+
+ ✓ Starting...
+ ✓ Ready in 815ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2.5s
+ GET / 200 in 2765ms
+ ⚠ Cross origin request detected from 192.168.1.104 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ✓ Compiled /favicon.ico in 128ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 393ms
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.4.1 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.104:3000
+   - Experiments (use with caution):
+     · optimizePackageImports
+
+ ✓ Starting...
+ ⚠ Invalid next.config.ts options detected: 
+ ⚠     Unrecognized key(s) in object: 'swcMinify'
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+ ✓ Ready in 1239ms
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbopack
+
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.4.1 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.104:3000
+   - Experiments (use with caution):
+     · optimizePackageImports
+
+ ✓ Starting...
+ ✓ Ready in 2.3s
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbopack
+
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.4.1 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.104:3000
+   - Experiments (use with caution):
+     · optimizePackageImports
+
+ ✓ Starting...
+ ✓ Ready in 1241ms
+ ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+ ⚠ See instructions if you need to configure Turbopack:
+  https://nextjs.org/docs/app/api-reference/next-config-js/turbopack
+
+ ○ Compiling / ...
+ ✓ Compiled / in 1914ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/pc/Documents/MoneyMate_Claude/moneymate/.next/static/development/_buildManifest.js.tmp.8nunkexuonl'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/pc/Documents/MoneyMate_Claude/moneymate/.next/static/development/_buildManifest.js.tmp.8nunkexuonl'
+}
+ ✓ Compiled /_error in 496ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/pc/Documents/MoneyMate_Claude/moneymate/.next/static/development/_buildManifest.js.tmp.07vkrh06pb5h'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/pc/Documents/MoneyMate_Claude/moneymate/.next/static/development/_buildManifest.js.tmp.07vkrh06pb5h'
+}
+[Error: ENOENT: no such file or directory, open '/Users/pc/Documents/MoneyMate_Claude/moneymate/.next/static/development/_buildManifest.js.tmp.8nunkexuonl'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/pc/Documents/MoneyMate_Claude/moneymate/.next/static/development/_buildManifest.js.tmp.8nunkexuonl'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/pc/Documents/MoneyMate_Claude/moneymate/.next/static/development/_buildManifest.js.tmp.wwg8xlm7iqc'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/pc/Documents/MoneyMate_Claude/moneymate/.next/static/development/_buildManifest.js.tmp.wwg8xlm7iqc'
+}
+[Error: ENOENT: no such file or directory, open '/Users/pc/Documents/MoneyMate_Claude/moneymate/.next/static/development/_buildManifest.js.tmp.1r0k1i2s7se'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/pc/Documents/MoneyMate_Claude/moneymate/.next/static/development/_buildManifest.js.tmp.1r0k1i2s7se'
+}
+ ✓ Compiled /favicon.ico in 91ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/pc/Documents/MoneyMate_Claude/moneymate/.next/static/development/_buildManifest.js.tmp.sej8tet9h'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/pc/Documents/MoneyMate_Claude/moneymate/.next/static/development/_buildManifest.js.tmp.sej8tet9h'
+}
+[?25h
