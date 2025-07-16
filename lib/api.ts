@@ -2,6 +2,10 @@
 const EXCHANGE_API_URL = 'https://api.exchangerate-api.com/v4/latest/USD';
 const BACKUP_API_URL = 'https://api.fixer.io/latest';
 
+// CORS proxy for client-side requests
+const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/';
+const ALTERNATIVE_API = 'https://api.fxratesapi.com/latest';
+
 export interface ExchangeRateResponse {
   base: string;
   date: string;
@@ -57,8 +61,8 @@ export class CurrencyAPI {
     }
 
     try {
-      // Try primary API
-      const response = await fetch(`${EXCHANGE_API_URL.replace('USD', baseCurrency)}`, {
+      // Try alternative API first (more reliable)
+      const response = await fetch(`${ALTERNATIVE_API}?base=${baseCurrency}`, {
         method: 'GET',
         headers: {
           'Accept': 'application/json',
@@ -82,13 +86,31 @@ export class CurrencyAPI {
       console.error('Primary API failed:', error);
       
       try {
-        // Try backup strategy - use mock data with current timestamp
+        // Try original API
+        const response = await fetch(`${EXCHANGE_API_URL.replace('USD', baseCurrency)}`, {
+          method: 'GET',
+          headers: {
+            'Accept': 'application/json',
+          },
+          cache: 'no-cache'
+        });
+
+        if (response.ok) {
+          const data: ExchangeRateResponse = await response.json();
+          if (data.rates) {
+            this.setCachedData(baseCurrency, data);
+            return data;
+          }
+        }
+        
+        throw new Error('API failed');
+      } catch (backupError) {
+        console.error('All APIs failed, using mock data:', backupError);
+        
+        // Use mock data as final fallback
         const mockData = this.getMockData(baseCurrency);
         this.setCachedData(baseCurrency, mockData);
         return mockData;
-      } catch (backupError) {
-        console.error('Backup strategy failed:', backupError);
-        throw new Error('All exchange rate services are unavailable');
       }
     }
   }
