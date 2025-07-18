@@ -50,8 +50,6 @@ struct CreateAlertView: View {
             .background(theme.backgroundColor)
             .navigationTitle("Fiyat Uyarısı Oluştur")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbarBackground(theme.backgroundColor, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("İptal") {

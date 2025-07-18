@@ -149,7 +149,6 @@ struct HomeView: View {
                 CreateAlertView(currency: currency)
                     .environmentObject(alertService)
                     .themed()
-                    .presentationDetents([.medium, .large])
             }
         }
         .sheet(isPresented: $showingAlertsList) {
