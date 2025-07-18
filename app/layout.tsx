@@ -14,7 +14,6 @@ const geistMono = {
 export const metadata: Metadata = {
   title: "MoneyMate: Currency Converter",
   description: "Track real-time exchange rates with beautiful animations",
-  manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
