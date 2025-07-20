@@ -1,0 +1,25 @@
+
+  # Node.js
+  node_modules/
+  npm-debug.log*
+  yarn-debug.log*
+  yarn-error.log*
+
+  # Xcode
+  .DS_Store
+  xcuserdata/
+  DerivedData/
+  build/
+  *.xcworkspace
+  !default.xcworkspace
+
+  # Dependencies
+  Pods/
+
+  # Generated files
+  out/
+  .build/
+
+  # Environment
+  .env
+  *.log
